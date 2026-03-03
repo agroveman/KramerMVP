@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import "./styles/global.css";
+
+/* Global app base */
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  background: radial-gradient(900px 600px at 20% 10%, rgba(34, 211, 238, 0.15), transparent 55%),
+    radial-gradient(900px 600px at 80% 0%, rgba(16, 185, 129, 0.10), transparent 50%),
+    linear-gradient(180deg, #0b1220 0%, #0a1020 35%, #070b14 100%);
+  color: #e2e8f0;
+}
+
+/* Make focus states look intentional */
+:focus-visible {
+  outline: 2px solid rgba(34, 211, 238, 0.7);
+  outline-offset: 2px;
+}
